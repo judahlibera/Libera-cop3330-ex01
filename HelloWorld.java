@@ -5,12 +5,15 @@
 
 package com.example.helloworld;
 
-public class HelloWorld {
-    public static void main(String args[]) {
-        int x=10;
-        int y=25;
-        int z=x+y;
+import java.util.*;
 
-        System.out.println("Sum of x+y = " + z);
+public class HelloWorld {
+
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in); //System.in is a standard input stream
+        System.out.print("What is your name? ");
+        String str= sc.nextLine();              //reads string
+        System.out.printf("Hello, %s, Nice to meet you!", str);
     }
 }
